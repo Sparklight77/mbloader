@@ -43,7 +43,7 @@
         </activity>
         <activity
             android:name=".Fallback"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

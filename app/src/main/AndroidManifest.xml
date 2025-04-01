@@ -43,7 +43,7 @@
         </activity>
         <activity
             android:name=".Fallback"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -110,7 +110,7 @@
             android:alwaysRetainTaskState="true"
             android:configChanges="fontScale|density|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen|locale|mnc|mcc"
             android:excludeFromRecents="false"
-            android:exported="false"
+            android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="sensorLandscape"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar"

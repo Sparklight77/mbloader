@@ -31,6 +31,21 @@
 			android:textStyle="bold"
 			android:textColor="#000000" />
 	</LinearLayout>
+	<TextView
+		android:id="@+id/textview4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Launcher logs:"
+		android:textSize="19sp"
+		android:textStyle="bold|italic"
+		android:textColor="#673AB7" />
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:orientation="horizontal" />
 	<TableLayout
 		android:id="@+id/tablelayout2"
 		android:layout_width="match_parent"
@@ -45,8 +60,8 @@
 			android:textColor="#000000" />
 		<com.google.android.material.button.MaterialButton
 			android:id="@+id/mbl2_load"
-			android:layout_width="wrap_content"
-			android:layout_height="120dp"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
 			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:text="Deploy MBL mode\n(experimental)"
@@ -81,8 +96,8 @@
 		</LinearLayout>
 		<com.google.android.material.button.MaterialButton
 			android:id="@+id/draco_load"
-			android:layout_width="wrap_content"
-			android:layout_height="120dp"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
 			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:text="Deploy Draco mode\n(Recommended)"
@@ -94,35 +109,19 @@
 			style="@style/Widget.MaterialComponents.Button" />
 	</TableLayout>
 	<LinearLayout
-		android:id="@+id/linear2"
+		android:id="@+id/linearlayout1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:padding="8dp"
 		android:orientation="horizontal">
-		<LinearLayout
-			android:id="@+id/linearlayout1"
-			android:layout_width="match_parent"
+		<TextView
+			android:id="@+id/textview6"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:padding="8dp"
-			android:orientation="horizontal">
-			<TextView
-				android:id="@+id/textview6"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="Changelog:\n# idk\n# idk\n# idk \n# idk\n# idk"
-				android:textSize="14sp"
-				android:textStyle="bold"
-				android:textColor="#000000" />
-		</LinearLayout>
+			android:text="Changelog:\n# idk\n# idk\n# idk \n# idk\n# idk"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF" />
 	</LinearLayout>
-	<TextView
-		android:id="@+id/textview4"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center_horizontal"
-		android:text="Launcher logs:"
-		android:textSize="19sp"
-		android:textStyle="bold|italic"
-		android:textColor="#673AB7" />
 </LinearLayout>

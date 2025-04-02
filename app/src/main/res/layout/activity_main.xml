@@ -1,108 +1,128 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:id="@+id/linearlayout"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
 	android:padding="8dp">
-
 	<TextView
 		android:id="@+id/textview"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
 		android:text="@string/welcome"
 		android:textSize="19sp"
-		android:gravity="center_horizontal" />
-
+		android:textColor="#000000" />
 	<LinearLayout
-		android:id="@+id/tablelayout"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"		
-		android:orientation="vertical"
-		android:padding="8dp"
-		android:background="#FF000000">
-
-		<TextView
-			android:id="@+id/textview1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/mbl2_desc" />
-
-		<Button
-			android:id="@+id/mbl2_load"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Load with mbl2" />
-
-	</LinearLayout>
-
-	<LinearLayout
-		android:id="@+id/tablelayout1"
+		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="vertical"		
 		android:padding="8dp"
-		android:background="#FF000000">
-
+		android:orientation="horizontal">
 		<TextView
-			android:id="@+id/textview2"
+			android:id="@+id/textview5"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/draco_desc" />
-
-		<Button
-			android:id="@+id/draco_load"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Load with draco" />
-
+			android:padding="8dp"
+			android:text="MB Loader V1.1 (BETA)"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
 	</LinearLayout>
-
-	<LinearLayout
-		android:id="@+id/linearlayout1"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		android:padding="8dp">
-
-		<TextView
-			android:id="@+id/textview3"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="@string/mc_pkgname" />
-
-		<EditText
-			android:id="@+id/mc_pkgname"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:hint="Package name of Minecraft"
-			android:inputType="text" />
-
-	</LinearLayout>
-
 	<TableLayout
 		android:id="@+id/tablelayout2"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:padding="8dp">
-
-		<TextView
-			android:id="@+id/textview4"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Launcher logs here:"
-			android:gravity="center_horizontal"
-			android:textSize="19sp" />
-
 		<TextView
 			android:id="@+id/listener"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="   " />
-
+			android:text="   "
+			android:textSize="12sp"
+			android:textColor="#000000" />
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/mbl2_load"
+			android:layout_width="wrap_content"
+			android:layout_height="120dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Deploy MBL mode\n(experimental)"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+			app:backgroundTint="@color/colorPrimary"
+			app:cornerRadius="8dp"
+			style="@style/Widget.MaterialComponents.Button" />
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/mc_pkgname"
+				android:textSize="12sp"
+				android:textColor="#000000" />
+			<EditText
+				android:id="@+id/mc_pkgname"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#EF9A9A"
+				android:textSize="12sp"
+				android:textColor="#000000"
+				android:hint="Package name of Minecraft"
+				android:textColorHint="#607D8B" />
+		</LinearLayout>
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/draco_load"
+			android:layout_width="wrap_content"
+			android:layout_height="120dp"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Deploy Draco mode\n(Recommended)"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF"
+			android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+			app:backgroundTint="@color/colorPrimary"
+			app:cornerRadius="8dp"
+			style="@style/Widget.MaterialComponents.Button" />
 	</TableLayout>
-
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linearlayout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Changelog:\n# idk\n# idk\n# idk \n# idk\n# idk"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+	<TextView
+		android:id="@+id/textview4"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Launcher logs:"
+		android:textSize="19sp"
+		android:textStyle="bold|italic"
+		android:textColor="#673AB7" />
 </LinearLayout>
